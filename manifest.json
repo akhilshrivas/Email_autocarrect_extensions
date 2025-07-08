@@ -1,0 +1,18 @@
+{
+    "manifest_version": 3,
+    "name": "Email Auto-Corrector",
+    "version": "1.0",
+    "description": "Auto-correct common email typos like gamai.com → gmail.com",
+    "permissions": ["scripting"],
+    "host_permissions": ["<all_urls>"],
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ],
+    "action": {
+      "default_popup": "popup.html"
+    }
+  }
+  
